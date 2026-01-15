@@ -5,6 +5,7 @@ pipeline {
         CREDENTIALS_ID = '31'
         GITHUB_REPO_BACKEND = 'git@github.com:fsoymaz/Calculator.git'
         NUGET_FEED = "${WORKSPACE}/nuget_packages"
+        PATH = "/opt/homebrew/bin:${env.PATH}"
     }
     
     stages {
